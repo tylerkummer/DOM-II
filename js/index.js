@@ -23,6 +23,15 @@ funBus.addEventListener("wheel", ()=>{
 });
 
 //drag/drop
+// const dragMe = document.querySelector(".drag");
+// const dropMe = document.querySelector(".drop");
+
+//new
+const imgSize = document.querySelector(".img-fluid");
+imgSize.addEventListener("mouseenter", ()=>{
+    imgSize.style.transform = "scale(1.2)";
+    imgSize.style.transition = "transform 0.3s";
+})
 
 
 //load
@@ -32,6 +41,8 @@ loadImg.forEach(el=>{
         alert("images are loaded");
     })
 })
+
+//
 
 //focus
 const foc = document.querySelectorAll("p");
